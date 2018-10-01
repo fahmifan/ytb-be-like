@@ -21,13 +21,27 @@
     color: #fff;
 }
 
-/* Alignment */
+/* Alignment, Sizing */
 .center {
     margin: 0 auto !important;
 }
+.mt-2 {
+  margin-top: 1rem;  
+}
+
+.pt-1 {
+    padding-top: .5rem;  
+}
+  
 
 /* Components */
 .navbar {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.profile-pic {
+    border-radius: 200%;
+    width: 36px;
+    height: 36px;
 }
