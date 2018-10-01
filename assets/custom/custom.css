@@ -1,0 +1,33 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font */
+* {
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/* Colors */
+.bg-red {
+    background: #d32f2f;
+}
+.white {
+    color: #fff;
+}
+
+/* Alignment */
+.center {
+    margin: 0 auto !important;
+}
+
+/* Components */
+.navbar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
