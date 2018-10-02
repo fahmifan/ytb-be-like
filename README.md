@@ -549,6 +549,5 @@ We will using image [placeholder](https://placeholder.com/) for simplicity.
 ## Part 02
 
 
-
 ## Part 03
 We replace the Home, History, and Profile with icons
