@@ -42,6 +42,8 @@ In this part we import the bootstrap grid css and will make the layout without s
     </nav>
     ``` 
 
+- Here we see after class css `row` it follows by class `col`. This is the pattern to use in bootstrap.
+
 5. To make it looks nice we will add some styling. 
 
 - Make a new folder in `assets` folder called `custom`. And in `custom`
