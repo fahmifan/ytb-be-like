@@ -179,11 +179,66 @@ In this part we import the bootstrap grid css and will make the layout without s
     ```
 
 ## Part 01
+We will make the main feed here. Just collection of video cards
+We will using image [placeholder](https://placeholder.com/) for simplicity.
+
+1. We begin with add `<main></main>` tag under `<header>` tag. In the `<main>` tag, add `container` class
+
+    ```html
+    ...
+    </header>
+    
+    <!-- Ytb feed -->
+    <main class="container">
+    </main>
+    ```
+
+2. Then we will make a cards componenet for the video list. Add this code to `<main>`. We add class `row` too.
+
+    ```html
+    <div class="row">
+    </div>
+    ```
+
+- This is used for framing the cards
+
+3. The video list in youtube are contains a profile pic, video thumbnail, and some description. Let's add it under the `div` we make it earlier. For simplicity we'll use the placeholder image (you need to connect to internet)
+
+    ```html
+    <!-- index.html -->
+    <img class="col" src="https://via.placeholder.com/350x150" alt="">
+
+    <div class="row">
+        
+        <!-- profile pic -->
+        <span class="col-2">
+            <div class="bg-red profile-pic"></div>
+        </span>
+
+        <!-- description -->
+        <div class="col-10">
+            <p>This is desription of the video</p>
+            <small>This is the sub desription of the video</small>
+        </div>
+    </div>
+    ```
+
+- We also need to add css to make the profile pic rounded.
+
+    ```css
+    /* Components */
+    ...
+
+    .profile-pic {
+        border-radius: 200%;
+        width: 36px;
+        height: 36px;
+    }
+    ```
+
 
 
 ## Part 02
-We will make the main feed here. Just collection of video cards
-We will using image [placeholder](https://placeholder.com/) for simplicity
 
 ## Part 03
 We replace the Home, History, and Profile with icons
