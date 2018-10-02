@@ -15,32 +15,34 @@ In this part we import the bootstrap grid css and will make the layout without s
 ```
 
 2. Then add header tag inside `<body></body>`
-```html
-<header>
-</header>
-```
+
+    ```html
+    <header>
+    </header>
+    ```
 
 3. Now we will make the container inside the `<header></header>` by adding this code
-```html
-<div class="container">
-</div>
-```  
+
+    ```html
+    <div class="container">
+    </div>
+    ```  
 
 4. Inside the container (the `div`) we will add a navbar. With three nav-items inside it. 
 
-```html
-<nav class="row">
-    <div class="col">
-        Home
-    </div>
-    <div class="col">
-        Profile
-    </div>
-    <div class="col">
-        History
-    </div>
-</nav>
-``` 
+    ```html
+    <nav class="row">
+        <div class="col">
+            Home
+        </div>
+        <div class="col">
+            Profile
+        </div>
+        <div class="col">
+            History
+        </div>
+    </nav>
+    ``` 
 
 5. To make it looks nice we will add some styling. 
 
@@ -75,6 +77,7 @@ In this part we import the bootstrap grid css and will make the layout without s
     ``` 
 
 - Add this css class to the `header`
+
     ```html
     <header class="bg-red white bold">
     ```
