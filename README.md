@@ -547,7 +547,43 @@ We will using image [placeholder](https://placeholder.com/) for simplicity.
     ```
 
 ## Part 02
+Here we will change the nav-items to use icons. I used the [material icons](https://material.io/icons/).
 
+1. Download the desired icons and place it inside the `assets/icons/`.
+
+2. Just change the text with the icon
+
+    ```html
+    <nav class="navbar row center tc vc">
+        <div class="col">
+            <img class="icon" src="assets/icons/baseline_home_white_24dp.png" alt="Home">
+        </div>
+        <div class="col">
+            <img class="icon" src="assets/icons/baseline_hourglass_full_white_24dp.png" alt="History">
+        </div>
+        <div class="col">
+            <img class="icon" src="assets/icons/baseline_face_white_24dp.png" alt="Profile">
+        </div>
+    </nav>
+    ```
+
+3. Add some css to make it nice
+
+    ```css
+    /* Components */
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon:hover {
+        cursor: pointer;
+        box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .2);
+    }
+    ```
+
+4. The `:hover` is a pseudo-css, it will active when the icon are hovered. It will add shadow to the background of the icon.
 
 ## Part 03
-We replace the Home, History, and Profile with icons
+
+Now, this is the final results. Good job!
