@@ -13,3 +13,6 @@ In this part we import the bootstrap grid css and will make the layout without s
 ## Part 02
 We will make the main feed here. Just collection of video cards
 We will using image [placeholder](https://placeholder.com/) for simplicity
+
+## Part 03
+We replace the Home, History, and Profile with icons
