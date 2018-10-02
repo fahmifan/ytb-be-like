@@ -17,17 +17,87 @@
 .bg-red {
     background: #d32f2f;
 }
+
 .white {
     color: #fff;
 }
 
-/* Alignment */
+.gray {
+    color: #616161;
+}
+
+/* Alignment, Sizing */
 .center {
     margin: 0 auto !important;
 }
 
+.vc {
+    display: flex;
+    align-items: center;
+}
+
+.tc {
+    text-align: center;
+}
+
+/* Margin */
+.mt-2 {
+  margin-top: 1rem;  
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Padding */
+.pa-0 {
+    padding: 0;
+}
+
+.pt-1 {
+    padding-top: .5rem;  
+}
+
+.pb-1 {
+    padding-bottom: .5rem;  
+}
+
+.pr-3 {
+    padding-right: 1.5rem
+}
+
+.pl-3 {
+    padding-left: 1.5rem
+}
+
+
+.pl-0 {
+    padding-left: 0;
+}
+
+
 /* Components */
+.icon {
+    width: 36px;
+    height: 36px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .2);
+}
+
 .navbar {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    border-radius: 7%;
+}
+
+.profile-pic {
+    border-radius: 200%;
+    width: 36px;
+    height: 36px;
 }
