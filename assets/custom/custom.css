@@ -77,9 +77,23 @@
 
 
 /* Components */
+.icon {
+    width: 36px;
+    height: 36px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .2);
+}
+
 .navbar {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    border-radius: 7%;
 }
 
 .profile-pic {
