@@ -60,7 +60,7 @@ In this part we import the bootstrap grid css and will make the layout without s
 
     /* Font */
     * {
-    font-family: Arial, Helvetica, sans-serif;  
+        font-family: Arial, Helvetica, sans-serif;  
     }
 
     .bold {
@@ -205,7 +205,8 @@ We will using image [placeholder](https://placeholder.com/) for simplicity.
 3. The video list in youtube are contains a profile pic, video thumbnail, and some description. Let's add it under the `div` we make it earlier. For simplicity we'll use the placeholder image (you need to connect to internet)
 
     ```html
-    <!-- index.html -->
+    ...
+
     <img class="col" src="https://via.placeholder.com/350x150" alt="">
 
     <div class="row">
@@ -236,9 +237,318 @@ We will using image [placeholder](https://placeholder.com/) for simplicity.
     }
     ```
 
+4. To make it more beautifull, we also add some css to it. Add this css class code to `video card`
 
+    ```html
+    <div class="row mt-2">
+        <img class="col" src="https://via.placeholder.com/350x150" alt="">
+
+        <div class="row pt-1 pb-1 col center vc">
+            
+            <span class="col-2">
+                <div class="bg-red profile-pic"></div>
+            </span>
+
+            <div class="col-10 pt-1">
+                <p>This is desription of the video</p>
+                <small class="gray">This is the sub desription of the video</small>
+            </div>
+        </div>
+
+    </div>
+    ```
+
+    ```css
+    /* Colors */
+    ...
+    
+    .gray {
+        color: #616161;
+    }
+
+    /* Alignment, Sizing */
+    ...
+
+    .vc {
+        display: flex;
+        align-items: center;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+
+    /* Margin */
+    .mt-2 {
+        margin-top: 1rem;  
+    }
+
+    .mb-2 {
+        margin-bottom: 1rem;
+    }
+
+    /* Padding */
+    .pa-0 {
+        padding: 0;
+    }
+
+    .pt-1 {
+        padding-top: .5rem;  
+    }
+
+    .pb-1 {
+        padding-bottom: .5rem;  
+    }
+
+    .pr-3 {
+        padding-right: 1.5rem
+    }
+
+    .pl-3 {
+        padding-left: 1.5rem
+    }
+
+    .pl-0 {
+        padding-left: 0;
+    }
+    ```
+
+- If you noticed the navbar may a bit off the center. We can center it by adding css class `tc`
+
+    ```html
+    ...
+
+    <nav class="navbar row center tc">
+
+    ...
+    ```
+
+5. We can make it responsive to the tablet and desktop layout by using different `col-`. Remember there is `xs md l xl` ? We can mix and match those. Let's add them!
+
+    ```html
+    <!-- Ytb feed -->
+    <div class="row mt-2">
+        <img class="col col-sm-6 col-md-4" src="https://via.placeholder.com/350x150" alt="">
+
+        <div class="row pt-1 pb-1 col col-sm-6 col-md-8 center vc">
+            
+            <span class="col-2 col-md-12">
+                <div class="bg-red profile-pic"></div>
+            </span>
+
+            <div class="col-10 col-md-12 pt-1">
+                <p>This is desription of the video</p>
+                <small class="gray">This is the sub desription of the video</small>
+            </div>
+        </div>
+
+    </div>
+    ```
+
+- Now if you expand your screen layout, it should be change the cards layout too (i hope xp ). 
+
+- Well, to make it looks like a list just copy and paste the Ytb feed card into several times. I'll copied it three times.
+
+6. Now, your code should looks something like this.
+
+- `index.html`
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ytb be Like</title>
+
+        <!-- Import css -->
+        <link rel="stylesheet" href="assets/bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="assets/custom/custom.css">
+
+    </head>
+    <body>
+        
+        <header class="bg-red white bold">
+            <div class="container">
+                <nav class="navbar row center tc">
+
+                    <div class="col">
+                        Home
+                    </div>
+                    <div class="col">
+                        Profile
+                    </div>
+                    <div class="col">
+                        History
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- Ytb feed -->
+        <main class="mt-2 mb-2 pl-2 pr-2 container">
+        
+            <!-- Video Card -->
+            <div class="row mt-2">
+                <img class="col col-sm-6 col-md-4" src="https://via.placeholder.com/350x150" alt="">
+
+                <div class="row pt-1 pb-1 col col-sm-6 col-md-8 center vc">
+                    
+                    <span class="col-2 col-md-12">
+                        <div class="bg-red profile-pic"></div>
+                    </span>
+
+                    <div class="col-10 col-md-12 pt-1">
+                        <p>This is desription of the video</p>
+                        <small class="gray">This is the sub desription of the video</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="row mt-2">
+                <img class="col col-sm-6 col-md-4" src="https://via.placeholder.com/350x150" alt="">
+
+                <div class="row pt-1 pb-1 col col-sm-6 col-md-8 center vc">
+                    
+                    <span class="col-2 col-md-12">
+                        <div class="bg-red profile-pic"></div>
+                    </span>
+
+                    <div class="col-10 col-md-12 pt-1">
+                        <p>This is desription of the video</p>
+                        <small class="gray">This is the sub desription of the video</small>
+                    </div>
+                </div>
+
+            </div>
+        
+            <!-- Video Card -->
+            <div class="row mt-2">
+                <img class="col col-sm-6 col-md-4" src="https://via.placeholder.com/350x150" alt="">
+
+                <div class="row pt-1 pb-1 col col-sm-6 col-md-8 center vc">
+                    
+                    <span class="col-2 col-md-12">
+                        <div class="bg-red profile-pic"></div>
+                    </span>
+
+                    <div class="col-10 col-md-12 pt-1">
+                        <p>This is desription of the video</p>
+                        <small class="gray">This is the sub desription of the video</small>
+                    </div>
+                </div>
+
+            </div>
+        
+        </main>
+
+    </body>
+    </html>
+    ```
+
+- `custom.css`
+
+    ```css
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Font */
+    * {
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    .bold {
+        font-weight: bold;
+    }
+
+
+    /* Colors */
+    .bg-red {
+        background: #d32f2f;
+    }
+
+    .white {
+        color: #fff;
+    }
+
+    .gray {
+        color: #616161;
+    }
+
+    /* Alignment, Sizing */
+    .center {
+        margin: 0 auto !important;
+    }
+
+    .vc {
+        display: flex;
+        align-items: center;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+    /* Margin */
+    .mt-2 {
+        margin-top: 1rem;  
+    }
+
+    .mb-2 {
+        margin-bottom: 1rem;
+    }
+
+    /* Padding */
+    .pa-0 {
+        padding: 0;
+    }
+
+    .pt-1 {
+        padding-top: .5rem;  
+    }
+
+    .pb-1 {
+        padding-bottom: .5rem;  
+    }
+
+    .pr-3 {
+        padding-right: 1.5rem
+    }
+
+    .pl-3 {
+        padding-left: 1.5rem
+    }
+
+
+    .pl-0 {
+        padding-left: 0;
+    }
+
+
+    /* Components */
+    .navbar {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .profile-pic {
+        border-radius: 200%;
+        width: 36px;
+        height: 36px;
+    }
+    ```
 
 ## Part 02
+
+
 
 ## Part 03
 We replace the Home, History, and Profile with icons
